@@ -1,0 +1,42 @@
+---
+layout: layouts/main.njk
+title: Projects
+eleventyNavigation:
+  key: Projects
+---
+
+<p>
+  These are my personal projects, with links to their
+  latest releases. Each of the programs that you see here is
+  <a href="https://www.gnu.org/philosophy/free-sw.en.html"
+    >free software</a
+  >.
+</p>
+
+{% for project in projects %}
+<!-- {{ project.name }} -->
+<div id="{{ project.id }}" class="proj">
+  <h2 class="proj-title">
+    <a href="{{ project.url }}">
+      {{ project.name }}
+      <img src="{{ project.image }}"
+           alt="{{ project.name }}"
+           class="proj-img" />
+    </a>
+  </h2>
+  <p class="proj-desc">
+    {{ project.description }}
+  </p>
+  {% if project.versions %}
+  {% for version in project.versions %}
+  {% if forloop.last %}
+  <p class="proj-ver">
+    <em>Latest version:</em> &nbsp;
+    <a href="{{ project.dl-url }}">{{ project.name }} {{ version.number }}</a>,
+    released {{ version.date }}.
+  </p>
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+</div>
+{% endfor %}

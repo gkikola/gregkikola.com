@@ -1,0 +1,15 @@
+<!-- Navigation -->
+<div id="menu">
+  <header class="container">
+    <span id="title">
+      <a href="/">{{ site.name }}</a>
+    </span>
+    <nav>
+      {% for page in nav.pages %}
+      <a href="{{ page.url }}">{{ page.name }}</a>
+      {% if forloop.last != true %}&bull;{% endif %}
+      {% endfor %}
+    </nav>
+  </header>
+</div>
+<!-- End Navigation -->

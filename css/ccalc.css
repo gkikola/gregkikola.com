@@ -1,0 +1,14 @@
+.code-listing {
+  padding: 1em;
+  background-color: lavender;
+}
+
+.prog-options, .prog-options td, .prog-options th {
+  border-width: thin;
+  border-style: solid;
+  border-collapse: collapse;
+}
+
+.prog-options td, .prog-options th {
+  padding: 0.5em;
+}

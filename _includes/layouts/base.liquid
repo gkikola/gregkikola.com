@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description"
+          content="{{ site.description }}" />
+    <meta name="keywords"
+          content="kikola, software, developer, portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/css/layout.css" type="text/css" rel="stylesheet" />
+    <link href="/css/style.css" type="text/css" rel="stylesheet" />
+    {% if style %}
+    <link href="{{ style }}" type="text/css" rel="stylesheet" />
+    {% endif %}
+    <link href="/img/favicon.png" type="image/png" rel="icon" />
+    <title>{{ site.name }}{% if title %} - {{ title }}{% endif %}</title>
+  </head>
+  <body>
+    <!-- Skip to main content -->
+    <a class="skip" href="#main">Skip to main content</a>
+
+    {% include nav.liquid %}
+
+    <div id="content-wrapper">
+
+      {{ content }}
+
+      {% include footer.liquid %}
+
+    </div> <!-- End content-wrapper -->
+  </body>
+</html>

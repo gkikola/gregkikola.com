@@ -1,0 +1,224 @@
+---
+layout: layouts/main.njk
+title: Nonny
+style: /css/nonny.css
+eleventyNavigation:
+  key: Nonny
+  parent: Projects
+---
+
+<p>
+  <img src="/projects/nonny/img/nonny.png" alt="Nonny" id="logo"/>
+</p>
+<h2>Table of Contents</h2>
+<ol>
+  <li><a href="#description">Description</a></li>
+  <li><a href="#download">Download</a></li>
+  <li><a href="#features">Features</a></li>
+  <li><a href="#nonogram">What Is a Nonogram?</a></li>
+  <li><a href="#copyright">Copyright</a></li>
+</ol>
+<h2 id="description">Description</h2>
+<p>
+  Nonny lets you play and create nonogram puzzles! Nonograms (also
+  known as Griddlers, Picross, and Paint-by-Number) are logic
+  puzzles played on a grid of squares. The squares are filled in or
+  left blank according to numeric clues at the sides of the
+  grid. When the puzzle is finished, the filled-in squares form a
+  picture.
+</p>
+<p>
+  <img src="/projects/nonny/img/puzzle.png"
+       alt="Example puzzle" />
+</p>
+<p>
+  Nonny comes packaged with a selection of puzzles for you to play,
+  and you can easily import puzzles from other sources. Nonny also
+  allows you to create your own puzzles. There is a built-in solver
+  which can be used to verify that your puzzles have only one
+  solution.
+</p>
+<p>
+  <img src="/projects/nonny/img/puzzle2.png"
+       alt="Example puzzle" />
+</p>
+<p>
+  Nonny tracks your completion status and times for each puzzle, and
+  you may save your progress on a puzzle and resume solving it at a
+  later time.
+</p>
+<h2 id="download">Download</h2>
+<p>Select an option below to download Nonny. The source code is
+  also available on
+  <a href="https://github.com/gkikola/nonny">GitHub</a>.
+</p>
+<p><strong>Nonny 0.1 Pre-release</strong> &nbsp; (2017-06-14)</p>
+<ul>
+  <li>Source code:
+    <a href="/dl/nonny-0.1.tar.gz">nonny-0.1.tar.gz</a>
+    (1.4 MB)</li>
+  <li>Windows:
+    <a href="/dl/nonny-0.1_w32.zip">nonny-0.1_w32.zip</a>
+    (2.8 MB)</li>
+</ul>
+<h2 id="features">Features</h2>
+<ul>
+  <li>Can play both standard and multicolor nonograms
+    <ul>
+      <li>Tracks completion status for all puzzles</li>
+      <li>
+        Tracks time spent on solving each puzzle and records best
+        completion times
+      </li>
+      <li>Will save your progress on unfinished puzzles</li>
+      <li>
+        Optional hint system shows you which lines can be further
+        solved
+      </li>
+      <li>No explicit limits on puzzle size or complexity</li>
+      <li>
+        Information panel shows details about the current puzzle and
+        shows a snapshot of the puzzle grid
+      </li>
+    </ul>
+  </li>
+  <li>Can create both standard and multicolor nonograms
+    <ul>
+      <li>
+        Various drawing tools are available: draw lines, rectangles,
+        and ellipses, or fill regions with a particular color
+      </li>
+      <li>
+        Allows you to save title, author, and copyright information
+        for each puzzle you create
+      </li>
+    </ul>
+  </li>
+  <li>
+    Undo and redo commands can be used while solving or editing
+    puzzles
+  </li>
+  <li>Built-in solver and analysis tool
+    <ul>
+      <li>Will solve most simple puzzles very quickly</li>
+      <li>
+        Can solve puzzles which require guessing or multi-line
+        reasoning
+      </li>
+      <li>
+        Can determine whether a puzzle has a unique solution
+      </li>
+      <li>
+        Can determine whether a puzzle is solvable one line at
+        a time
+      </li>
+      <li>Can find and display multiple solutions for a puzzle</li>
+    </ul>
+  </li>
+  <li>
+    File selector displays puzzle information and allows you to load
+    and save puzzles anywhere and in various file formats
+    <ul>
+      <li>
+        Supports the
+        <a href="http://www.lancaster.ac.uk/%7Esimpsons/nonogram/fmt2">
+          .non format</a>
+        used in Steven Simpson's solver, extended
+        with multicolor support
+      </li>
+      <li>
+        Supports the .g and .mk formats used in
+        <a href="http://www.olsak.net/grid.html#English">
+          Mirek Olšák and Petr Olšák's solver</a>
+      </li>
+      <li>
+        Supports the .nin format used by
+        <a href="https://jwilk.net/software/nonogram">
+          Jakub Wilk's solver</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+<h2 id="nonogram">What Is a Nonogram?</h2>
+<p>
+  Nonograms are logic puzzles originating from Japan. You start with
+  a blank grid and then fill in the cells according to the clue
+  numbers at the sides. When you finish the puzzle, you're left with
+  a picture to look at:
+</p>
+<p>
+  <img src="/projects/nonny/img/solving.png"
+       alt="Solving a puzzle" />
+</p>
+<p>
+  For example, a clue of "4" means that you need to fill in four
+  consecutive blocks somewhere within that line. By considering the
+  different possible positions you can determine that some of the
+  cells in the line must be filled:
+</p>
+<p>
+  <img src="/projects/nonny/img/clue.png"
+       alt="How clues work" />
+</p>
+<p>
+  Similarly, a clue of "1 2" means that one cell is to be filled,
+  followed by a gap of at least one blank cell, followed by two
+  consecutive filled cells:
+</p>
+<p>
+  <img src="/projects/nonny/img/clue2.png"
+       alt="How clues work" />
+</p>
+<p>
+  By working line by line in this way, you can solve most
+  puzzles. Harder puzzles may require more advanced techniques, but
+  well-made puzzles should not require guessing.
+</p>
+<p>
+  Nonny also supports multicolor puzzles. These puzzles work the
+  same way, but each clue number is colored to indicate which color
+  the cells must be painted:
+</p>
+<p>
+  <img src="/projects/nonny/img/color_solving.png"
+       alt="Solving a multicolor puzzle" />
+</p>
+<p>
+  Adjacent blocks of cells of different colors need not have a gap
+  between them. For example, a blue 2 followed by a red 2 means that
+  there are two consecutive blue cells, possibly but not necessarily
+  followed by a gap, followed by two consecutive red cells:
+</p>
+<p>
+  <img src="/projects/nonny/img/color_clue.png"
+       alt="How multicolor clues work" />
+</p>
+<p>
+  Again, by considering the different possibilities you can find
+  cells that must be filled in, which gives you more information to
+  solve the other lines in the puzzle.
+</p>
+<h2 id="copyright">Copyright</h2>
+<p>
+  Nonny is copyright &copy; 2017 Gregory Kikola. License GPLv3+:
+  <a href="http://www.gnu.org/licenses/gpl.html">
+    GNU GPL version 3 or later</a>.
+</p>
+<p>
+  Nonny is free software: you can redistribute it and/or modify
+  it under the terms of the
+  <a href="http://www.gnu.org/licenses/gpl.html">
+    GNU General Public License</a>
+  as published by the
+  <a href="http://www.fsf.org/">Free Software Foundation</a>,
+  either version 3 of the License, or (at your option) any later
+  version.
+</p>
+<p>
+  Nonny is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  <a href="http://www.gnu.org/licenses/gpl.html">
+    GNU General Public License</a>
+  for more details.
+</p>

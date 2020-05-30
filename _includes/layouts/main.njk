@@ -1,0 +1,17 @@
+---
+layout: layouts/base.liquid
+---
+
+<!-- Content -->
+<div class="container content">
+  {% include "breadcrumbs.njk" %}
+  <main id="main">
+    {% if full-title %}
+    <h1>{{ full-title }}</h1>
+    {% elif title %}
+    <h1>{{ title }}</h1>
+    {% endif %}
+    {{ content | safe }}
+  </main>
+</div>
+<!-- End Content -->

@@ -1,0 +1,18 @@
+---
+layout: layouts/main.njk
+full-title: Home
+eleventyNavigation:
+  key: Home
+---
+
+<p id="intro">
+  Welcome to my website! I write <a href="/projects/">free software and
+    other things</a>.
+</p>
+<hr />
+<p id="social-links">
+  {% for profile in social.profiles %}
+  <a href="{{ profile.url }}">{{ profile.name }}</a>
+  {% if forloop.last != true %}&bull;{% endif %}
+  {% endfor %}
+</p>

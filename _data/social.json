@@ -1,0 +1,20 @@
+{
+  "profiles": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/gkikola"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/gkikola/"
+    },
+    {
+      "name": "StackExchange",
+      "url": "https://stackexchange.com/users/10087823/greg-kikola"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/gkikola"
+    }
+  ]
+}

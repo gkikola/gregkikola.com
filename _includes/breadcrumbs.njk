@@ -1,0 +1,8 @@
+{% if eleventyNavigation.parent %}
+<!-- Breadcrumbs -->
+{% set parents = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
+{% for item in parents %}
+<a href="{{ item.url }}">{{ item.title }}</a> &bull;
+{% endfor %}
+<strong>{{ title }}</strong>
+{% endif %}

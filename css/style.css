@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu {
+  color: white;
+  background-color: black;
+}
+
+/* Site title */
+#title {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+#title a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Navigation links */
+nav a, nav a:link, nav a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+
+/* Content */
+#content-wrapper {
+  color: black;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+table {
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 3px;
+  text-align: center;
+}
+
+td.left {
+  text-align: left;
+}
+
+#intro {
+  font-size: 1.10em;
+  text-align: center;
+}
+
+#social-links {
+  font-size: 1.10em;
+  text-align: center;
+}
+
+.legal {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.proj-img {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 6px;
+}
+
+img#greg {
+  border-radius: 25px;
+}

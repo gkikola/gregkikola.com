@@ -1,0 +1,165 @@
+html, body {
+  margin: 0em;
+  padding: 0em;
+  width: 100%;
+}
+
+/* Make sure old browsers treat HTML5 tags correctly */
+header, section, footer, aside, nav, main, article, figure {
+  display: block;
+}
+
+hr {
+  margin: 1.5em 0em;
+}
+
+/* "Skip to main content" link */
+a.skip {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+}
+
+a.skip:focus, a.skip:active {
+  color: black;
+  background-color: white;
+  left: 0.5em;
+  top: 4em;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  margin: 10px 10px;
+  padding: 10px 5px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1.2em;
+  z-index: 999;
+}
+
+/* Menu bar */
+#menu {
+  padding: 0.5em;
+  overflow: auto;
+  width: calc(100% - 1em);
+  position: static;
+  text-align: center;
+}
+
+/* Site title */
+#title {
+  font-size: 1.5em;
+  padding: 0.5em;
+  float: left;
+}
+
+/* Navigation links */
+nav {
+  font-size: 1.25em;
+  padding: 0.75em 0.25em 0.25em 0.25em;
+  float: right;
+}
+
+nav a {
+  padding: 0.25em;
+}
+
+/* Content */
+#content-wrapper {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.container {
+  max-width: 732px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+
+.clear {
+  clear: both;
+}
+
+.proj-title {
+  clear: left;
+}
+
+.proj-img {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+img#greg {
+  float: right;
+  margin-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Narrow screens */
+@media only screen and (max-width: 575px) {
+  /* Reduce menu size */
+  #title {
+    font-size: 1.25em;
+  }
+
+  nav {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  /* Reduce menu size */
+  #title {
+    font-size: 1.25em;
+  }
+
+  nav {
+    font-size: 1.1em;
+  }
+
+  /* Don't float images */
+  .proj-img {
+    float: none;
+    display: block;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+  }
+
+  img#greg {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Really narrow screens */
+@media only screen and (max-width: 500px) {
+  /* Reduce menu size */
+  #title {
+    font-size: 1.1em;
+  }
+
+  nav {
+    font-size: 1em;
+    padding-top: 0.625em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  /* Hide site title */
+  #title {
+    float: none;
+    display: none;
+  }
+
+  nav {
+    float: none;
+    font-size: 1em;
+    padding-top: 0.1em;
+  }
+}

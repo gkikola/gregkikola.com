@@ -1,0 +1,15 @@
+{
+  "name": "Greg Kikola",
+  "description": "Personal website of Greg Kikola",
+  "domain": "www.gregkikola.com",
+  "url": "https://www.gregkikola.com/",
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "identifier": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "author": {
+    "name": "Greg Kikola",
+    "email": "gkikola@gmail.com"
+  }
+}

@@ -1,0 +1,297 @@
+---
+layout: layouts/main.njk
+title: ccalc
+style: /css/ccalc.css
+eleventyNavigation:
+  key: ccalc
+  parent: Projects
+---
+
+<div class="ccalc">
+  <p>
+    <strong>ccalc</strong> is a fast, lightweight, and
+    cross-platform command-line calculator, ideal for
+    performing quick calculations from the terminal. This is
+    often faster and easier than invoking an interactive or
+    graphical program.
+  </p>
+  <p>
+    <strong>ccalc</strong> takes an arithmetic expression as
+    an argument, it evaluates this expression, and then it
+    prints the result. If no expression is given,
+    <strong>ccalc</strong> will read lines from standard
+    input. <strong>ccalc</strong> supports a number of options
+    for formatting output, including options for base
+    conversion.
+  </p>
+  <h2 id="examples">Examples</h2>
+  <p>
+    Here are a few example calculations
+    using <strong>ccalc</strong>. For detailed usage
+    information, see the <a href="#usage">Program Usage</a>
+    section below.
+  </p>
+  <p>Basic operations:</p>
+  <pre class="code-listing">
+    <code>
+      $ ccalc 2 + 2
+      4
+
+      $ ccalc "21 - 3 * 5"
+      6
+
+      $ ccalc "8146 % 7"
+      5
+    </code>
+  </pre>
+  <p>Built-in functions and constants:</p>
+  <pre class="code-listing">
+    <code>
+      $ ccalc "1.4 * E"
+      3.805595
+
+      $ ccalc "max(12, 15)"
+      15
+
+      $ ccalc "sin(PI / 3)"
+      0.866025
+
+      $ ccalc "exp(3.2)"
+      24.532530
+    </code>
+  </pre>
+  <p>Base conversion:</p>
+  <pre class="code-listing">
+    <code>
+      $ ccalc --radix=13 "54"
+      42
+
+      $ ccalc --binary "0x4a"
+      1001010
+
+      $ ccalc --radix=60 "82709"
+      22:58:29
+    </code>
+  </pre>
+  <p>Boolean tests:</p>
+  <pre class="code-listing">
+    <code>
+      $ ccalc --bool "10 &gt; 5"
+      true
+
+      $ ccalc --bool "PI == 3"
+      false
+    </code>
+  </pre>
+  <h2 id="download">Downloading ccalc</h2>
+  <p>Select an option below to
+    download <strong>ccalc</strong>. The source code is also
+    available
+    on <a href="https://github.com/gkikola/ccalc">GitHub</a>.
+  </p>
+  {% for project in projects %}
+  {% if project.id == "ccalc" %}
+  {% for version in project.versions reversed %}
+  <p><strong>ccalc {{ version.number }}</strong> &nbsp; ({{ version.date }})</p>
+  <ul>
+    {% for file in version.files %}
+    <li>
+      {{ file.name }}:
+      <a href="{{ file.url }}">{{ file.url | split: "/" | last }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+  {% endif %}
+  {% endfor %}
+  <h2 id="documentation">Documentation</h2>
+  <p>
+    Run <code>man ccalc</code> or <code>ccalc --help</code> for
+    detailed usage information.  Alternatively, see
+    the <a href="#usage">Program Usage</a> section below.
+  </p>
+  <h2 id="copyright">Copyright and Licensing</h2>
+  <p>
+    <strong>ccalc</strong> is copyright &copy; 2015-2017
+    Gregory Kikola.  License GPLv3+:
+    <a href="http://www.gnu.org/licenses/gpl.html">
+      GNU GPL version 3 or later</a>.
+  </p>
+  <p>
+    <strong>ccalc</strong> is free software: you can
+    redistribute it and/or modify it under the terms of the
+    <a href="http://www.gnu.org/licenses/gpl.html">
+      GNU General Public License</a>
+    as published by the
+    <a href="http://www.fsf.org/">
+      Free Software Foundation</a>, either version 3 of the
+    License, or (at your option) any later version.
+  </p>
+  <p>
+    <strong>ccalc</strong> is distributed in the hope that it
+    will be useful, but WITHOUT ANY WARRANTY; without even the
+    implied warranty of MERCHANTABILITY or FITNESS FOR A
+    PARTICULAR PURPOSE.  See the
+    <a href="http://www.gnu.org/licenses/gpl.html">
+      GNU General Public License</a>
+    for more details.
+  </p>
+  <h2 id="usage">Program Usage</h2>
+  <p><code>ccalc [OPTION...] [EXPRESSION]</code></p>
+  <p>
+    EXPRESSION should be a mathematical expression conforming
+    to the syntax of the C programming language. OPTION can be
+    any combination of the options in the table
+    below. <strong>ccalc</strong> will evaluate EXPRESSION and
+    print the result to standard output. If EXPRESSION is not
+    provided, <strong>ccalc</strong> will read expressions
+    from standard input. Any program options must be specified
+    before the start of an expression.
+  </p>
+  <table class="prog-options">
+    <thead>
+      <tr>
+        <th>Option</th>
+        <th>Long name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>-b</td>
+        <td>--binary</td>
+        <td>Print integer results in binary (base 2)</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>--bool</td>
+        <td>
+          Interpret the result as a boolean value and print
+          true or false
+        </td>
+      </tr>
+      <tr>
+        <td>-c</td>
+        <td>--caret-exp</td>
+        <td>
+          Use caret ^ for exponentiation rather than for
+          bitwise XOR
+        </td>
+      </tr>
+      <tr>
+        <td>-d</td>
+        <td>--degrees</td>
+        <td>
+          Use degrees instead of radians for trigonometric
+          functions
+        </td>
+      </tr>
+      <tr>
+        <td>-g</td>
+        <td>--grouping=<em>DIGITS</em></td>
+        <td>
+          Group each set of <em>DIGITS</em> digits and
+          separate each group with spaces (use 0 for no
+          grouping)
+        </td>
+      </tr>
+      <tr>
+        <td>-o</td>
+        <td>--octal</td>
+        <td>Print integer results in octal (base 8)</td>
+      </tr>
+      <tr>
+        <td>-p</td>
+        <td>--precision=<em>DIGITS</em></td>
+        <td>
+          Print floating-point results with <em>DIGITS</em>
+          digits after the decimal point (default 6)
+        </td>
+      </tr>
+      <tr>
+        <td>-r</td>
+        <td>--radix=<em>RADIX</em></td>
+        <td>Print integer results in base <em>RADIX</em></td>
+      </tr>
+      <tr>
+        <td>-s</td>
+        <td>--scientific-notation</td>
+        <td>
+          Always print floating-point results in scientific
+          notation, [-]d.ddde&plusmn;dd
+        </td>
+      </tr>
+      <tr>
+        <td>-t</td>
+        <td>--time</td>
+        <td>Show how much time the computation took</td>
+      </tr>
+      <tr>
+        <td>-u</td>
+        <td>--uppercase</td>
+        <td>
+          Use uppercase rather than lowercase letters for
+          digits in bases greater than 10
+        </td>
+      </tr>
+      <tr>
+        <td>-x</td>
+        <td>--hexadecimal</td>
+        <td>Print integer results in hexadecimal (base 16)</td>
+      </tr>
+      <tr>
+        <td>-?</td>
+        <td>--help</td>
+        <td>Give detailed usage information</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>--usage</td>
+        <td>Give a short usage message</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>--version</td>
+        <td>Display version information and exit</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    Mandatory arguments to long options are also mandatory for
+    the corresponding short options.
+  </p>
+  <p>
+    All C operators are supported except for those with
+    side-effects (namely assignment, increment, and
+    decrement). In addition, an exponentiation
+    operator <code>**</code> and an integer division
+    operator <code>//</code> are provided. Both integer and
+    floating-point values may be used in the input
+    expression: <strong>ccalc</strong> will perform
+    conversions where necessary.
+  </p>
+  <p>
+    Note that <strong>ccalc</strong> treats the <code>^</code>
+    operator as C does, as the bitwise XOR operator and not as
+    exponentiation. This behavior can be changed with the
+    --caret-exp option. Otherwise you may use the
+    <code>pow</code> function or the <code>**</code> operator.
+  </p>
+  <p>
+    Note also that, unlike in C, the division
+    operator <code>/</code> may produce a floating-point result
+    even when both operands are integers. To force integer
+    division, the <code>//</code> operator may be used.
+  </p>
+  <p>
+    A few mathematical constants like <code>PI</code>
+    and <code>E</code> are defined, and most of the math functions
+    in the C standard library are available.
+  </p>
+  <p>
+    Integer values may also be specified in binary, octal, or
+    hexadecimal.  Binary values should be prefixed
+    with <code>0b</code>, octal values with <code>0</code>, and
+    hexadecimal values with <code>0x</code>.
+  </p>
+</div>
