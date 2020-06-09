@@ -48,6 +48,10 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
+p.center {
+  text-align: center;
+}
+
 table {
   border-collapse: collapse;
   border-style: hidden;
