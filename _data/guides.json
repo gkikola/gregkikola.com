@@ -1,9 +1,9 @@
 [
   {
     "name": "Dudley: Elementary Number Theory (Second Edition)",
-    "updated": "2020-03-19",
+    "updated": "2020-06-29",
     "chapters": "1-11",
-    "size": "414.3 kB",
+    "size": "416.5 kB",
     "pdfUrl": "/dl/guides/dudleysol.pdf",
     "sourceUrl": "https://github.com/gkikola/sol-dudley"
   },
