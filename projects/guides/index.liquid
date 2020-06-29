@@ -25,88 +25,27 @@ eleventyNavigation:
     <th>PDF File Size</th>
     <th>LaTeX Source</th>
   </tr>
+  {% for guide in guides %}
   <tr>
     <td>
-      <a href="/dl/guides/dudleysol.pdf">
-        Dudley: Elementary Number Theory (Second Edition)
+      <a href="{{ guide.pdfUrl }}">
+        {{ guide.name }}
       </a>
     </td>
     <td>
-      2020-03-19
+      {{ guide.updated }}
     </td>
     <td>
-      1-11
+      {{ guide.chapters }}
     </td>
     <td>
-      414.3 kB
+      {{ guide.size }}
     </td>
     <td>
-      <a href="https://github.com/gkikola/sol-dudley">
+      <a href="{{ guide.sourceUrl }}">
         GitHub
       </a>
     </td>
   </tr>
-  <tr>
-    <td>
-      <a href="/dl/guides/dfsol.pdf">
-        Dummit and Foote: Abstract Algebra (Third Edition)
-      </a>
-    </td>
-    <td>
-      2019-12-22
-    </td>
-    <td>
-      0-2, A1
-    </td>
-    <td>
-      702.1 kB
-    </td>
-    <td>
-      <a href="https://github.com/gkikola/sol-dummit-foote">
-        GitHub
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="/dl/guides/hksol.pdf">
-        Hoffman and Kunze: Linear Algebra (Second Edition)
-      </a>
-    </td>
-    <td>
-      2020-01-12
-    </td>
-    <td>
-      1
-    </td>
-    <td>
-      223.6 kB
-    </td>
-    <td>
-      <a href="https://github.com/gkikola/sol-hoffman-kunze">
-        GitHub
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="/dl/guides/rudinsol.pdf">
-        Rudin: Principles of Mathematical Analysis (Third Edition)
-      </a>
-    </td>
-    <td>
-      2020-01-02
-    </td>
-    <td>
-      1-4
-    </td>
-    <td>
-      419.2 kB
-    </td>
-    <td>
-      <a href="https://github.com/gkikola/sol-baby-rudin">
-        GitHub
-      </a>
-    </td>
-  </tr>
+  {% endfor %}
 </table>
