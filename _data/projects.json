@@ -1,5 +1,12 @@
 [
   {
+    "name": "Textbook Solution Guides",
+    "id": "guides",
+    "url": "/projects/guides/",
+    "image": "/img/guides.png",
+    "description": "Solutions to exercises from various mathematics textbooks."
+  },
+  {
     "name": "Option++",
     "id": "optionpp",
     "url": "/projects/optionpp/",
@@ -44,13 +51,6 @@
         ]
       }
     ]
-  },
-  {
-    "name": "Textbook Solution Guides",
-    "id": "guides",
-    "url": "/projects/guides/",
-    "image": "/img/guides.png",
-    "description": "Solutions to exercises from various mathematics textbooks."
   },
   {
     "name": "Nonny",
