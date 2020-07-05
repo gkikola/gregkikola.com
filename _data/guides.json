@@ -17,9 +17,9 @@
   },
   {
     "name": "Hoffman and Kunze: Linear Algebra (Second Edition)",
-    "updated": "2020-01-12",
-    "chapters": "1",
-    "size": "223.6 kB",
+    "updated": "2020-07-02",
+    "chapters": "1-2",
+    "size": "318.5 kB",
     "pdfUrl": "/dl/guides/hksol.pdf",
     "sourceUrl": "https://github.com/gkikola/sol-hoffman-kunze"
   },
