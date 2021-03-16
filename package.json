@@ -9,7 +9,7 @@
   "author": "Greg Kikola",
   "license": "CC-BY-4.0",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-navigation": "^0.1.5",
     "prettier": "2.0.5"
   }
