@@ -22,12 +22,14 @@ body {
 nav a, nav a:link, nav a:visited {
   color: white;
   text-decoration: none;
+  transition: all 300ms;
 }
 
 nav a:hover {
   color: black;
   background-color: white;
   text-decoration: none;
+  transition: all 300ms;
 }
 
 /* Content */
