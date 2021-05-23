@@ -1,10 +1,71 @@
 [
   {
-    "name": "Textbook Solution Guides",
-    "id": "guides",
-    "url": "/projects/guides/",
-    "image": "/img/guides.png",
-    "description": "Solutions to exercises from various mathematics textbooks."
+    "name": "ccalc",
+    "id": "ccalc",
+    "url": "/projects/ccalc/",
+    "dl-url": "/projects/ccalc/#download",
+    "image": "/img/ccalc.png",
+    "description": "Evaluate mathematical expressions from the command line. Accepts and evaluates expressions using C syntax.",
+    "versions": [
+      {
+        "number": "1.01",
+        "date": "2017-01-17",
+        "files": [
+          {
+            "name": "Source code",
+            "id": "source",
+            "url": "/dl/ccalc-1.01.tar.gz"
+          },
+          {
+            "name": "Windows",
+            "id": "w32",
+            "url": "/dl/ccalc-1.01_w32.zip"
+          }
+        ]
+      },
+      {
+        "number": "1.02",
+        "date": "2017-05-25",
+        "files": [
+          {
+            "name": "Source code",
+            "id": "source",
+            "url": "/dl/ccalc-1.02.tar.gz"
+          },
+          {
+            "name": "Windows",
+            "id": "w32",
+            "url": "/dl/ccalc-1.02_w32.zip"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nonny",
+    "id": "nonny",
+    "url": "/projects/nonny/",
+    "dl-url": "/projects/nonny/#download",
+    "image": "/img/nonny.png",
+    "description": "Play and create nonogram puzzles! Nonograms are logic puzzles in which numeric clues are used to fill in squares within a grid in order to reveal a picture.",
+    "versions": [
+      {
+        "number": "0.1",
+        "date": "2017-06-14",
+        "files": [
+          {
+            "name": "Source code",
+            "id": "source",
+            "url": "/dl/nonny-0.1.tar.gz"
+          },
+          {
+            "name": "Windows",
+            "id": "w32",
+            "url": "/dl/nonny-0.1_w32.zip"
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Option++",
@@ -53,71 +114,10 @@
     ]
   },
   {
-    "name": "Nonny",
-    "id": "nonny",
-    "url": "/projects/nonny/",
-    "dl-url": "/projects/nonny/#download",
-    "image": "/img/nonny.png",
-    "description": "Play and create nonogram puzzles! Nonograms are logic puzzles in which numeric clues are used to fill in squares within a grid in order to reveal a picture.",
-    "versions": [
-      {
-        "number": "0.1",
-        "date": "2017-06-14",
-        "files": [
-          {
-            "name": "Source code",
-            "id": "source",
-            "url": "/dl/nonny-0.1.tar.gz"
-          },
-          {
-            "name": "Windows",
-            "id": "w32",
-            "url": "/dl/nonny-0.1_w32.zip"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "ccalc",
-    "id": "ccalc",
-    "url": "/projects/ccalc/",
-    "dl-url": "/projects/ccalc/#download",
-    "image": "/img/ccalc.png",
-    "description": "Evaluate mathematical expressions from the command line. Accepts and evaluates expressions using C syntax.",
-    "versions": [
-      {
-        "number": "1.01",
-        "date": "2017-01-17",
-        "files": [
-          {
-            "name": "Source code",
-            "id": "source",
-            "url": "/dl/ccalc-1.01.tar.gz"
-          },
-          {
-            "name": "Windows",
-            "id": "w32",
-            "url": "/dl/ccalc-1.01_w32.zip"
-          }
-        ]
-      },
-      {
-        "number": "1.02",
-        "date": "2017-05-25",
-        "files": [
-          {
-            "name": "Source code",
-            "id": "source",
-            "url": "/dl/ccalc-1.02.tar.gz"
-          },
-          {
-            "name": "Windows",
-            "id": "w32",
-            "url": "/dl/ccalc-1.02_w32.zip"
-          }
-        ]
-      }
-    ]
+    "name": "Textbook Solution Guides",
+    "id": "guides",
+    "url": "/projects/guides/",
+    "image": "/img/guides.png",
+    "description": "Solutions to exercises from various mathematics textbooks."
   }
 ]
