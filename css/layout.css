@@ -45,7 +45,9 @@ a.skip:focus, a.skip:active {
   padding: 0.5em;
   overflow: auto;
   width: calc(100% - 1em);
-  position: static;
+  position: fixed;
+  top: 0px;
+  left: 0px;
   text-align: center;
 }
 
@@ -70,6 +72,7 @@ nav a {
 /* Content */
 #content-wrapper {
   padding: 0.5em 0.5em 0.5em 0.5em;
+  margin-top: 4.5em;
 }
 
 .container {
@@ -81,6 +84,13 @@ nav a {
 
 .clear {
   clear: both;
+}
+
+:target::before { /* Fix for section links not being offset by nav bar */
+  content: "";
+  display: block;
+  height: 3.5em;
+  margin-top: -3.5em;
 }
 
 .proj-title {
