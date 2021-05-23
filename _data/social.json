@@ -1,6 +1,10 @@
 {
   "profiles": [
     {
+      "name": "Email",
+      "url": "mailto:gkikola@gmail.com"
+    },
+    {
       "name": "GitHub",
       "url": "https://github.com/gkikola"
     },
