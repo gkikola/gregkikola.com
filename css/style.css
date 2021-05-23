@@ -70,13 +70,22 @@ td.left {
 }
 
 #intro {
-  font-size: 1.10em;
+  font-size: 1.25em;
   text-align: center;
+}
+
+#social-links-container {
+  text-align: center;
+  padding: 1em;
 }
 
 #social-links {
   font-size: 1.10em;
-  text-align: center;
+  padding: 0.5em;
+
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px gray;
 }
 
 .legal {
