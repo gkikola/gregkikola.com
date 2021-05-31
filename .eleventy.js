@@ -17,4 +17,5 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("contact/gkikola-pubkey.txt");
   eleventyConfig.addPassthroughCopy("projects/nonny/img");
   eleventyConfig.addPassthroughCopy("projects/optionpp/docs/");
+  eleventyConfig.addPassthroughCopy("projects/ww-score/");
 }
