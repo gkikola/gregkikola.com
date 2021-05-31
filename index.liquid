@@ -10,11 +10,8 @@ eleventyNavigation:
   <a href="https://www.gnu.org/philosophy/free-sw.en.html">Free
   software</a> enthusiast. Math geek.
 </p>
-<div id="social-links-container">
-  <span id="social-links">
-    {% for profile in social.profiles %}
-    <a href="{{ profile.url }}">{{ profile.name }}</a>
-    {% if forloop.last != true %}&bull;{% endif %}
-    {% endfor %}
-  </span>
+<div id="social-links" class="link-group">
+  {% for profile in social.profiles %}
+  <span class="link-group-item"><a href="{{ profile.url }}">{{ profile.name }}</a></span>
+  {% endfor %}
 </div>
