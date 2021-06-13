@@ -114,6 +114,13 @@
     ]
   },
   {
+    "name": "Simple Calculator",
+    "id": "simplecalc",
+    "url": "/simplecalc/",
+    "image": "/img/simplecalc.png",
+    "description": "A simple pocket-style calculator written in JavaScript. Has memory functions, can perform percentage calculations, and supports repeated calculations with constants."
+  },
+  {
     "name": "Textbook Solution Guides",
     "id": "guides",
     "url": "/projects/guides/",
@@ -123,7 +130,7 @@
   {
     "name": "Wits & Wagers Score Keeper",
     "id": "ww-score",
-    "url": "/projects/ww-score/",
+    "url": "/ww-score/",
     "image": "/img/ww-score.png",
     "description": "JavaScript score-keeping app for the board game Wits & Wagers."
   }
