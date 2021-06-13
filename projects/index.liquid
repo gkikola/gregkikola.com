@@ -23,6 +23,14 @@ eleventyNavigation:
   <p class="proj-desc">
     {{ project.description }}
   </p>
+  {% if project.languages %}
+  <p class="proj-lang">
+    <em>Language{% if project.languages.size > 1 %}s{% endif %}:</em> &nbsp;
+    {% for language in project.languages %}
+    {{ language }}{% if forloop.last == false %}, {% endif %}
+    {% endfor %}
+  </p>
+  {% endif %}
   {% if project.versions %}
   {% for version in project.versions %}
   {% if forloop.last %}

@@ -6,6 +6,9 @@
     "dl-url": "/projects/ccalc/#download",
     "image": "/img/ccalc.png",
     "description": "Evaluate mathematical expressions from the command line. Accepts and evaluates expressions using C syntax.",
+    "languages": [
+      "C"
+    ],
     "versions": [
       {
         "number": "1.01",
@@ -48,6 +51,9 @@
     "dl-url": "/projects/nonny/#download",
     "image": "/img/nonny.png",
     "description": "Play and create nonogram puzzles! Nonograms are logic puzzles in which numeric clues are used to fill in squares within a grid in order to reveal a picture.",
+    "languages": [
+      "C++"
+    ],
     "versions": [
       {
         "number": "0.1",
@@ -74,6 +80,9 @@
     "dl-url": "/projects/optionpp/#download",
     "image": "/img/optionpp.png",
     "description": "C++ library for reading command-line program options. Provides an easy way to read, validate, and process command-line options.",
+    "languages": [
+      "C++"
+    ],
     "versions": [
       {
         "number": "1.0",
@@ -118,20 +127,33 @@
     "id": "simplecalc",
     "url": "/simplecalc/",
     "image": "/img/simplecalc.png",
-    "description": "A simple pocket-style calculator written in JavaScript. Has memory functions, can perform percentage calculations, and supports repeated calculations with constants."
+    "description": "A simple pocket-style calculator written in JavaScript. Has memory functions, can perform percentage calculations, and supports repeated calculations with constants.",
+    "languages": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
   },
   {
     "name": "Textbook Solution Guides",
     "id": "guides",
     "url": "/projects/guides/",
     "image": "/img/guides.png",
-    "description": "Solutions to exercises from various mathematics textbooks."
+    "description": "Solutions to exercises from various mathematics textbooks.",
+    "languages": [
+      "LaTeX"
+    ]
   },
   {
     "name": "Wits & Wagers Score Keeper",
     "id": "ww-score",
     "url": "/ww-score/",
     "image": "/img/ww-score.png",
-    "description": "JavaScript score-keeping app for the board game Wits & Wagers."
+    "description": "JavaScript score-keeping app for the board game Wits & Wagers.",
+    "languages": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
   }
 ]
