@@ -1,16 +1,24 @@
 {
   "name": "gregkikola.com",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Personal website of Greg Kikola",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkikola/gregkikola.com.git"
   },
   "author": "Greg Kikola",
   "license": "CC-BY-4.0",
+  "homepage": "https://www.gregkikola.com/",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
-    "@11ty/eleventy-navigation": "^0.1.5",
-    "prettier": "2.0.5"
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-navigation": "^1.0.4",
+    "prettier": "^3.6.2"
   }
 }
