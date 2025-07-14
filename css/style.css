@@ -80,6 +80,9 @@ td.left {
 #intro {
   font-size: 1.25em;
   text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #social-links {

@@ -173,10 +173,12 @@ img#greg {
 }
 
 @media only screen and (max-width: 450px) {
-  /* Hide site title */
+  /* Put site title on separate line */
   #title {
+    display: block;
     float: none;
-    display: none;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
   }
 
   nav {
@@ -186,6 +188,6 @@ img#greg {
   }
 
   #content-wrapper {
-    margin-top: 2.5em;
+    margin-top: 4.5em;
   }
 }
